@@ -63,7 +63,7 @@ export async function deleteTweet(req, res, next) {
     if(!tweet){
         res.status(404).json({message: `Tweet id(${id}) not found`}) //id가 없으면 없다고 return
     }
-    if(tweet.userid !== req.userId){
+    if(tweet.userId !== req.userId){
         return res.sendStatus(403) // 작성한 userID와 요청(접속)한 userId가 같지않으면 수정하지 못하도록.
     }
     await tweetRepository.remove(id);

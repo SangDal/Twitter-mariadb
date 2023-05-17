@@ -1,0 +1,6 @@
+svc.sel4.cloudtype.app:30418
+
+1. DB관련 환경설정을 변경함
+2. 포스트맨으로 모든 API를 테스트한다.
+3. github에 repo를 추가하여 server만 push
+(.gitignore 다시만들기)
